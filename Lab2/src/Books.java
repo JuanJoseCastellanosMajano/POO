@@ -1,12 +1,12 @@
 public class Books {
 
-    private String ISBM;
+    private int ISBM;
 
-    public String getISBM() {
+    public int getISBM() {
         return ISBM;
     }
 
-    public void setISBM(String ISBM) {
+    public void setISBM(int ISBM) {
         this.ISBM = ISBM;
     }
 
@@ -40,7 +40,7 @@ public class Books {
         this.pag = pag;
     }
 
-public Books(String ISBM, String nombre, String autor, int pag){
+public Books(int ISBM, String nombre, String autor, int pag){
 
         this.ISBM= ISBM;
         this.nombre=nombre;
@@ -48,11 +48,10 @@ public Books(String ISBM, String nombre, String autor, int pag){
         this.pag=pag;
 }
 public Books(String nombre, String autor, int pag){
-        this.nombre="El principito";
-        this.autor="Antonie deSaints Exupery";
-        this.pag=50;
+    this.ISBM=isbmggenerator.generador();
+    this.nombre=nombre;
+    this.autor=autor;
+    this.pag=pag;
 }
-
-
-
+Isbmggenerator isbmggenerator =new Isbmggenerator();
 }

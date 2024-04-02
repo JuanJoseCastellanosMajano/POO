@@ -4,7 +4,8 @@ public class Isbmggenerator {
 
 
     public int generador(){
-        return this.contador++;
+        this.contador++;
+        return contador;
     }
 }
 
