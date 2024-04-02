@@ -40,6 +40,7 @@ public class Main {
                 option = sc.nextInt();
             }
         System.out.println("Adios");
+
     }
 
     public static float Suma(float num1, float num2 ){
