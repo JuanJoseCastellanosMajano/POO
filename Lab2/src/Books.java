@@ -47,7 +47,11 @@ public Books(String ISBM, String nombre, String autor, int pag){
         this.autor=autor;
         this.pag=pag;
 }
-
+public Books(String nombre, String autor, int pag){
+        this.nombre="El principito";
+        this.autor="Antonie deSaints Exupery";
+        this.pag=50;
+}
 
 
 
